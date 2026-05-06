@@ -69,4 +69,4 @@ if __name__ == "__main__":
             break
         result = query_fn(q)
         print(f"\n📎 Sources: {', '.join(s['document'] for s in result['sources'])}")
-        print(f"💡 A: {result['answer'][:300]}...\n")
+        print(f"💡 A: {result['answer']}\n")

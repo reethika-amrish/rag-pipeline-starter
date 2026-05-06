@@ -6,8 +6,6 @@
 
 This demo runs a **complete RAG pipeline** over my portfolio documents — ingestion, chunking, embedding, vector search, and grounded response generation. Ask it questions about my experience and it retrieves relevant context before answering.
 
-The architecture mirrors the **Document Intelligence Platform** I built with LangChain/LangGraph for an insurance enterprise client — simplified into a runnable, zero-dependency prototype.
-
 ### Patterns Demonstrated
 
 | Pattern | Implementation |
@@ -51,7 +49,6 @@ graph TD
 ```bash
 python -m src.pipeline
 ```
-
 No external dependencies — pure Python. Runs sample questions then enters interactive mode.
 
 ## Example Output
@@ -75,5 +72,4 @@ src/
 ├── generator.py   # Grounded response generation with source attribution
 └── pipeline.py    # End-to-end pipeline orchestration + interactive demo
 ```
-
 This repo distills that production system's core retrieval patterns into a runnable demo using my own portfolio as the document base.

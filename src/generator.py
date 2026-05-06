@@ -22,10 +22,6 @@ def generate_response(query: str, retrieved: list[dict]) -> dict:
         })
 
     context = " ".join(context_parts)
-
-    # Mock LLM response — in production this would be:
-    # prompt = f"Based on the following context, answer the question.\nContext: {context}\nQuestion: {query}"
-    # response = llm.invoke(prompt)
     answer = f"Based on my portfolio: {context[:500]}..."
 
     return {
